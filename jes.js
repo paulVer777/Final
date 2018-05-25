@@ -15,7 +15,7 @@
             }
 
         function makeUserDiv(user) {
-               const name = user.name.first
+
                    const imgUrl = user.picture.thumbnail
                    const email = user.email
 
@@ -25,11 +25,11 @@
                    const nameP = document.createElement('p')
                div.style.border = '1px solid black'
                 img.setAttribute('src', imgUrl)
-                nameP.innerText = name
+
             emailP.innerText = email
 
                   div.appendChild(img)
-                   div.appendChild(nameP)
+
                     div.appendChild(emailP)
                     return div
                }
